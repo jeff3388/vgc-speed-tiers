@@ -1,0 +1,25 @@
+{
+  "name": "vgc-speed-tiers",
+  "version": "1.0.0",
+  "description": "VGC speed tier dataset for Regulation F — level 50 speed stats, EV spreads, and benchmark comparisons for competitive Pokémon",
+  "main": "scripts/lookup.js",
+  "scripts": {
+    "lookup": "node scripts/lookup.js",
+    "validate": "node -e \"JSON.parse(require('fs').readFileSync('data/speed-tiers.json','utf8')); console.log('JSON valid');\""
+  },
+  "keywords": [
+    "pokemon",
+    "vgc",
+    "speed-tiers",
+    "competitive-pokemon",
+    "vgc-2024",
+    "regulation-f",
+    "doubles-pokemon",
+    "ev-spreads",
+    "trick-room",
+    "pokemon-data"
+  ],
+  "homepage": "https://pokestats.cc/guides",
+  "license": "MIT",
+  "author": "twjojo"
+}

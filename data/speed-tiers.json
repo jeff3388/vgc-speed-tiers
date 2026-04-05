@@ -1,0 +1,608 @@
+{
+  "meta": {
+    "regulation": "Regulation F",
+    "format": "VGC 2024",
+    "level": 50,
+    "version": "1.0.0",
+    "last_updated": "2026-04-05",
+    "note": "All stats assume 31 IVs unless marked 0 IVs (Trick Room sets). Speed stat = floor((floor((2*base+iv+floor(ev/4))*50/100)+5)*nature_modifier)"
+  },
+  "pokemon": [
+    {
+      "name": "Calyrex-Shadow",
+      "dex": 898,
+      "base_speed": 150,
+      "role": ["Restricted Attacker"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "calyrex-shadow-max-speed",
+          "label": "Max Speed (Standard)",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 222,
+          "item": "Life Orb / Choice Scarf",
+          "outspeeds": [
+            "Flutter Mane 252 EVs Timid (205)",
+            "Koraidon 252 EVs Jolly (205)",
+            "Miraidon 252 EVs Timid (205)",
+            "Chien-Pao 252 EVs Jolly (205)"
+          ],
+          "note": "Fastest non-Scarf set in Regulation F — outspeeds every base 135"
+        }
+      ]
+    },
+    {
+      "name": "Flutter Mane",
+      "dex": 987,
+      "base_speed": 135,
+      "role": ["Paradox Attacker", "Speed Control"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "flutter-mane-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 205,
+          "item": "Choice Specs / Life Orb / Booster Energy",
+          "outspeeds": [
+            "Tornadus 252 EVs Timid (179)",
+            "Chi-Yu 252 EVs Timid (184)",
+            "Urshifu 252 EVs Jolly (163)"
+          ],
+          "note": "Ties with Koraidon, Miraidon, Chien-Pao at max speed"
+        },
+        {
+          "id": "flutter-mane-bulky-speed",
+          "label": "Bulky Attacker (min speed investment)",
+          "nature": "Timid",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 170,
+          "item": "Choice Specs / Life Orb",
+          "outspeeds": [
+            "Kyogre 252 EVs Timid (156)",
+            "Groudon 252 EVs Jolly (156)",
+            "Great Tusk 252 EVs Jolly (152)"
+          ],
+          "note": "Frees EVs for bulk; still outspeeds weather setters"
+        }
+      ]
+    },
+    {
+      "name": "Koraidon",
+      "dex": 1007,
+      "base_speed": 135,
+      "role": ["Restricted Attacker", "Speed Control"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "koraidon-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 205,
+          "item": "Choice Band / Life Orb",
+          "outspeeds": [
+            "Tornadus 252 EVs Timid (179)",
+            "Urshifu 252 EVs Jolly (163)",
+            "Kyogre 252 EVs Timid (156)"
+          ],
+          "note": "Ties Flutter Mane, Miraidon, Chien-Pao at max speed"
+        }
+      ]
+    },
+    {
+      "name": "Miraidon",
+      "dex": 1008,
+      "base_speed": 135,
+      "role": ["Restricted Attacker", "Speed Control"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "miraidon-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 205,
+          "item": "Choice Specs / Life Orb / Booster Energy",
+          "outspeeds": [
+            "Tornadus 252 EVs Timid (179)",
+            "Chi-Yu 252 EVs Timid (184)",
+            "Urshifu 252 EVs Jolly (163)"
+          ],
+          "note": "Ties Flutter Mane, Koraidon, Chien-Pao at max speed"
+        }
+      ]
+    },
+    {
+      "name": "Chien-Pao",
+      "dex": 1005,
+      "base_speed": 135,
+      "role": ["Restricted Attacker"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "chien-pao-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 205,
+          "item": "Choice Band / Focus Sash",
+          "outspeeds": [
+            "Tornadus 252 EVs Timid (179)",
+            "Urshifu 252 EVs Jolly (163)",
+            "Kyogre 252 EVs Timid (156)"
+          ],
+          "note": "Ties Flutter Mane, Koraidon, Miraidon at max speed"
+        }
+      ]
+    },
+    {
+      "name": "Chi-Yu",
+      "dex": 1004,
+      "base_speed": 116,
+      "role": ["Restricted Attacker"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "chi-yu-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 184,
+          "item": "Choice Specs / Life Orb",
+          "outspeeds": [
+            "Tornadus 252 EVs Timid (179)",
+            "Urshifu 252 EVs Jolly (163)",
+            "Kyogre 252 EVs Timid (156)"
+          ],
+          "note": "Outspeeds Tornadus — critical benchmark for Ruination sweeps"
+        },
+        {
+          "id": "chi-yu-no-speed",
+          "label": "No Speed Investment",
+          "nature": "Modest",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 136,
+          "item": "Choice Specs",
+          "outspeeds": [
+            "Gholdengo 252 EVs Timid (149)",
+            "Rillaboom 252 EVs Jolly (150)"
+          ],
+          "note": "Loses to Tornadus; frees EVs for HP bulk"
+        }
+      ]
+    },
+    {
+      "name": "Tornadus",
+      "dex": 641,
+      "base_speed": 111,
+      "role": ["Tailwind Support", "Speed Control"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "tornadus-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 179,
+          "item": "Focus Sash / Safety Goggles",
+          "outspeeds": [
+            "Urshifu 252 EVs Jolly (163)",
+            "Kyogre 252 EVs Timid (156)",
+            "Great Tusk 252 EVs Jolly (152)"
+          ],
+          "note": "Standard set — gets Tailwind up before most threats"
+        }
+      ]
+    },
+    {
+      "name": "Urshifu-Rapid-Strike",
+      "dex": 892,
+      "base_speed": 97,
+      "role": ["Physical Attacker"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "urshifu-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 163,
+          "item": "Choice Band / Life Orb",
+          "outspeeds": [
+            "Kyogre 252 EVs Timid (156)",
+            "Groudon 252 EVs Jolly (156)",
+            "Great Tusk 252 EVs Jolly (152)"
+          ],
+          "note": "Surging Strikes bypasses protection — max speed is critical"
+        }
+      ]
+    },
+    {
+      "name": "Kyogre",
+      "dex": 382,
+      "base_speed": 90,
+      "role": ["Restricted Rain Setter", "Spread Attacker"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "kyogre-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 156,
+          "item": "Choice Specs / Mystic Water",
+          "outspeeds": [
+            "Great Tusk 252 EVs Jolly (152)",
+            "Rillaboom 252 EVs Jolly (150)",
+            "Gholdengo 252 EVs Timid (149)"
+          ],
+          "note": "Ties Groudon at max speed; outspeeds base 87 and below"
+        },
+        {
+          "id": "kyogre-scarf",
+          "label": "Choice Scarf Timid (0 EVs)",
+          "nature": "Timid",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 121,
+          "item": "Choice Scarf",
+          "outspeeds": [
+            "Flutter Mane 252 EVs Timid under Tailwind (205 → Scarf wins after TR cancel)",
+            "Koraidon 252 EVs Jolly (205)"
+          ],
+          "note": "Scarf stat = 121 × 1.5 = 181 (outspeeds all non-Scarf base 135s)"
+        }
+      ]
+    },
+    {
+      "name": "Groudon",
+      "dex": 383,
+      "base_speed": 90,
+      "role": ["Restricted Sun Setter", "Physical Attacker"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "groudon-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 156,
+          "item": "Life Orb / Assault Vest",
+          "outspeeds": [
+            "Great Tusk 252 EVs Jolly (152)",
+            "Rillaboom 252 EVs Jolly (150)",
+            "Gholdengo 252 EVs Timid (149)"
+          ],
+          "note": "Ties Kyogre at max speed"
+        }
+      ]
+    },
+    {
+      "name": "Great Tusk",
+      "dex": 984,
+      "base_speed": 87,
+      "role": ["Physical Attacker", "Hazard Control"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "great-tusk-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 152,
+          "item": "Booster Energy / Life Orb",
+          "outspeeds": [
+            "Rillaboom 252 EVs Jolly (150)",
+            "Gholdengo 252 EVs Timid (149)",
+            "Incineroar 252 EVs Jolly (112)"
+          ],
+          "note": "Booster Energy +1 Spe brings to 228 — outspeeds everything except Choice Scarf users"
+        }
+      ]
+    },
+    {
+      "name": "Rillaboom",
+      "dex": 812,
+      "base_speed": 85,
+      "role": ["Grassy Terrain Support", "Physical Attacker"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "rillaboom-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 150,
+          "item": "Choice Band / Assault Vest",
+          "outspeeds": [
+            "Gholdengo 252 EVs Timid (149)",
+            "Porygon2 max speed (112)",
+            "Incineroar 252 EVs Jolly (112)"
+          ],
+          "note": "Rarely runs max speed — most run bulk; Jolly mainly to speed creep Gholdengo"
+        },
+        {
+          "id": "rillaboom-bulky",
+          "label": "Bulky Physical (standard)",
+          "nature": "Adamant",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 105,
+          "item": "Assault Vest / Choice Band",
+          "outspeeds": [
+            "Cresselia 0 EVs (105 tie)",
+            "Incineroar 0 EVs (80)",
+            "Porygon2 0 EVs (80)"
+          ],
+          "note": "Most common set — maximizes damage output with Adamant"
+        }
+      ]
+    },
+    {
+      "name": "Gholdengo",
+      "dex": 1000,
+      "base_speed": 84,
+      "role": ["Special Attacker", "Anti-Trick Room"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "gholdengo-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 149,
+          "item": "Choice Specs / Life Orb",
+          "outspeeds": [
+            "Rillaboom 252 EVs Adamant (105)",
+            "Cresselia 0 EVs (105)",
+            "Incineroar 0 EVs (80)"
+          ],
+          "note": "Good as Gold blocks Priority and status — speed helps vs. anti-TR threats"
+        }
+      ]
+    },
+    {
+      "name": "Cresselia",
+      "dex": 488,
+      "base_speed": 85,
+      "role": ["Trick Room Setter", "Support"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "cresselia-no-speed",
+          "label": "No Speed Investment (standard)",
+          "nature": "Sassy",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 105,
+          "item": "Sitrus Berry / Mental Herb",
+          "outspeeds": [],
+          "note": "Wants to be slow under Trick Room — Sassy nature preferred for SpDef"
+        },
+        {
+          "id": "cresselia-min-speed",
+          "label": "Minimum Speed (Trick Room)",
+          "nature": "Sassy",
+          "evs": 0,
+          "ivs": 0,
+          "speed_stat": 94,
+          "item": "Mental Herb",
+          "outspeeds": [],
+          "note": "0 IVs + 0 EVs Sassy — moves first under Trick Room vs. Iron Hands / Calyrex-Ice"
+        }
+      ]
+    },
+    {
+      "name": "Incineroar",
+      "dex": 727,
+      "base_speed": 60,
+      "role": ["Support", "Intimidate"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "incineroar-standard",
+          "label": "Standard Bulk (no speed)",
+          "nature": "Careful",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 80,
+          "item": "Assault Vest",
+          "outspeeds": [
+            "Iron Hands 0 EVs Brave (63)",
+            "Calyrex-Ice 0 EVs Brave (63)",
+            "Amoonguss 0 EVs (50)"
+          ],
+          "note": "No speed investment — focus entirely on bulk and Intimidate cycling"
+        }
+      ]
+    },
+    {
+      "name": "Porygon2",
+      "dex": 233,
+      "base_speed": 60,
+      "role": ["Trick Room Setter", "Bulky Support"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "porygon2-standard",
+          "label": "Trick Room Setter (standard)",
+          "nature": "Sassy",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 80,
+          "item": "Eviolite",
+          "outspeeds": [],
+          "note": "Under Trick Room, moves after Incineroar (80 tie) but before Iron Hands (63)"
+        }
+      ]
+    },
+    {
+      "name": "Iron Hands",
+      "dex": 992,
+      "base_speed": 50,
+      "role": ["Trick Room Attacker", "Redirector"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "iron-hands-tr-standard",
+          "label": "Trick Room (standard)",
+          "nature": "Brave",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 63,
+          "item": "Assault Vest / Life Orb",
+          "outspeeds": [],
+          "note": "Under Trick Room, moves before Porygon2 (80) and Incineroar (80)"
+        },
+        {
+          "id": "iron-hands-tr-min",
+          "label": "Trick Room Min Speed",
+          "nature": "Brave",
+          "evs": 0,
+          "ivs": 0,
+          "speed_stat": 49,
+          "item": "Assault Vest",
+          "outspeeds": [],
+          "note": "0 IVs ensures Iron Hands moves last among all Trick Room attackers — maximum TR priority"
+        }
+      ]
+    },
+    {
+      "name": "Calyrex-Ice",
+      "dex": 898,
+      "base_speed": 50,
+      "role": ["Restricted Trick Room Attacker"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "calyrex-ice-tr-standard",
+          "label": "Trick Room (standard)",
+          "nature": "Brave",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 63,
+          "item": "Assault Vest / Choice Band",
+          "outspeeds": [],
+          "note": "Under Trick Room, 165 base Attack + 120 BP Glacial Lance spread KOs most threats"
+        },
+        {
+          "id": "calyrex-ice-tr-min",
+          "label": "Trick Room Min Speed",
+          "nature": "Brave",
+          "evs": 0,
+          "ivs": 0,
+          "speed_stat": 49,
+          "item": "Choice Band",
+          "outspeeds": [],
+          "note": "0 IVs — moves first under Trick Room even against min-speed Iron Hands"
+        }
+      ]
+    },
+    {
+      "name": "Kingambit",
+      "dex": 983,
+      "base_speed": 50,
+      "role": ["Physical Sweeper", "Late Game"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "kingambit-standard",
+          "label": "Standard (no speed)",
+          "nature": "Adamant",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 70,
+          "item": "Black Glasses / Loaded Dice",
+          "outspeeds": [
+            "Iron Hands Brave 0 EVs (63)",
+            "Calyrex-Ice Brave 0 EVs (63)",
+            "Amoonguss 0 EVs (50)"
+          ],
+          "note": "Supreme Overlord + Defiant — does not need speed to be effective"
+        }
+      ]
+    },
+    {
+      "name": "Amoonguss",
+      "dex": 591,
+      "base_speed": 30,
+      "role": ["Spore Lead", "Redirection Support"],
+      "usage_tier": "S",
+      "spreads": [
+        {
+          "id": "amoonguss-standard",
+          "label": "Standard (no speed)",
+          "nature": "Sassy",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 50,
+          "item": "Rocky Helmet / Sitrus Berry",
+          "outspeeds": [],
+          "note": "Slowest common support — moves last to use Spore / Rage Powder after threats have acted"
+        }
+      ]
+    },
+    {
+      "name": "Ting-Lu",
+      "dex": 1006,
+      "base_speed": 45,
+      "role": ["Restricted Physical Wall", "Ruination Support"],
+      "usage_tier": "B",
+      "spreads": [
+        {
+          "id": "ting-lu-standard",
+          "label": "Standard (no speed)",
+          "nature": "Careful",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 65,
+          "item": "Tera Orb / Leftovers",
+          "outspeeds": [
+            "Iron Hands Brave 0 EVs (63)",
+            "Calyrex-Ice Brave 0 EVs (63)",
+            "Amoonguss 0 EVs (50)"
+          ],
+          "note": "Vessel of Ruin cuts SpAtk of all opponents — no speed needed"
+        }
+      ]
+    }
+  ],
+  "trick_room_reference": {
+    "note": "Under Trick Room, slower Pokémon move first. Key TR speed benchmarks:",
+    "benchmarks": [
+      { "speed_stat": 49, "pokemon": "Iron Hands / Calyrex-Ice (0 IVs Brave)", "note": "Minimum realistic speed — moves first in TR" },
+      { "speed_stat": 50, "pokemon": "Amoonguss (0 EVs Sassy)", "note": "Very slow support" },
+      { "speed_stat": 63, "pokemon": "Iron Hands / Calyrex-Ice (31 IVs Brave)", "note": "Standard TR attacker speed" },
+      { "speed_stat": 65, "pokemon": "Ting-Lu (0 EVs Careful)", "note": "Moves after Iron Hands in TR" },
+      { "speed_stat": 70, "pokemon": "Iron Hands / Kingambit (0 EVs neutral)", "note": "No speed drops" },
+      { "speed_stat": 80, "pokemon": "Incineroar / Porygon2 (0 EVs)", "note": "Support pivot speed" },
+      { "speed_stat": 94, "pokemon": "Cresselia (0 IVs 0 EVs Sassy)", "note": "Min speed TR setter" },
+      { "speed_stat": 105, "pokemon": "Cresselia / Rillaboom (0 EVs)", "note": "Standard setter speed" }
+    ]
+  },
+  "tailwind_reference": {
+    "note": "Tailwind doubles Speed for 4 turns. Key benchmarks under Tailwind:",
+    "benchmarks": [
+      { "base_speed": 60, "base_stat": 160, "example": "Incineroar (80 → 160)", "note": "Outspeeds most non-Scarf attackers" },
+      { "base_speed": 90, "base_stat": 312, "example": "Kyogre 252 Timid (156 → 312)", "note": "Outspeeds all non-Scarf Pokémon" }
+    ]
+  }
+}
