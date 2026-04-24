@@ -1,10 +1,10 @@
 {
   "meta": {
-    "regulation": "Regulation F",
-    "format": "VGC 2024",
+    "regulation": "Regulation I",
+    "format": "VGC 2026",
     "level": 50,
-    "version": "1.0.0",
-    "last_updated": "2026-04-05",
+    "version": "1.1.0",
+    "last_updated": "2026-04-24",
     "note": "All stats assume 31 IVs unless marked 0 IVs (Trick Room sets). Speed stat = floor((floor((2*base+iv+floor(ev/4))*50/100)+5)*nature_modifier)"
   },
   "pokemon": [
@@ -27,9 +27,9 @@
             "Flutter Mane 252 EVs Timid (205)",
             "Koraidon 252 EVs Jolly (205)",
             "Miraidon 252 EVs Timid (205)",
-            "Chien-Pao 252 EVs Jolly (205)"
+            "Zacian 252 EVs Jolly (200)"
           ],
-          "note": "Fastest non-Scarf set in Regulation F — outspeeds every base 135"
+          "note": "Fastest non-Scarf set in Regulation I — outspeeds every restricted at max speed"
         }
       ]
     },
@@ -513,6 +513,153 @@
           "item": "Choice Band",
           "outspeeds": [],
           "note": "0 IVs — moves first under Trick Room even against min-speed Iron Hands"
+        }
+      ]
+    },
+    {
+      "name": "Zacian",
+      "dex": 888,
+      "base_speed": 148,
+      "role": ["Restricted Attacker", "Anti-Dark"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "zacian-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 200,
+          "item": "Rusted Sword",
+          "outspeeds": [
+            "Mewtwo 252 EVs Timid (188)",
+            "Eternatus 252 EVs Timid (188)",
+            "Tornadus 252 EVs Timid (179)",
+            "Kyogre 252 EVs Timid (156)"
+          ],
+          "note": "Fastest restricted in Regulation I at base 148 — outspeeds Mewtwo and Eternatus; only Calyrex-Shadow (222) and Scarf users exceed this"
+        },
+        {
+          "id": "zacian-speed-creep",
+          "label": "Speed Creep (167) — outspeeds Kyogre",
+          "nature": "Jolly",
+          "evs": 92,
+          "ivs": 31,
+          "speed_stat": 167,
+          "item": "Rusted Sword",
+          "outspeeds": [
+            "Kyogre 252 EVs Timid (156)",
+            "Groudon 252 EVs Jolly (156)",
+            "Great Tusk 252 EVs Jolly (152)"
+          ],
+          "note": "Frees EVs for HP bulk while still clearing the key 156 speed tier"
+        }
+      ]
+    },
+    {
+      "name": "Mewtwo",
+      "dex": 150,
+      "base_speed": 130,
+      "role": ["Restricted Attacker"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "mewtwo-max-speed",
+          "label": "Max Speed Timid",
+          "nature": "Timid",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 188,
+          "item": "Life Orb / Choice Scarf",
+          "outspeeds": [
+            "Tornadus 252 EVs Timid (179)",
+            "Kyogre 252 EVs Timid (156)",
+            "Groudon 252 EVs Jolly (156)"
+          ],
+          "note": "Ties Eternatus at max speed (188); Scarf brings to 282 — outspeeds Calyrex-Shadow (222) and all base 135s"
+        }
+      ]
+    },
+    {
+      "name": "Farigiraf",
+      "dex": 981,
+      "base_speed": 60,
+      "role": ["Armor Tail Support", "TR Setter"],
+      "usage_tier": "A",
+      "spreads": [
+        {
+          "id": "farigiraf-bulky-standard",
+          "label": "Bulky Support (standard)",
+          "nature": "Sassy",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 80,
+          "item": "Sitrus Berry / Eviolite analogue",
+          "outspeeds": [
+            "Porygon2 0 EVs (80 tie)",
+            "Iron Hands Brave 0 EVs (63)",
+            "Amoonguss 0 EVs (50)"
+          ],
+          "note": "Armor Tail prevents all priority moves including Fake Out — the key ability in Reg I where dual-restricted teams rely heavily on priority. 80 Speed at 0 EVs moves after Incineroar in normal play."
+        },
+        {
+          "id": "farigiraf-trick-room",
+          "label": "Trick Room (min Speed)",
+          "nature": "Sassy",
+          "evs": 0,
+          "ivs": 0,
+          "speed_stat": 67,
+          "item": "Mental Herb",
+          "outspeeds": [],
+          "note": "0 IVs + 0 EVs Sassy — moves first under Trick Room vs. Porygon2 (80) and Incineroar (80); Armor Tail ensures safe TR setup by preventing Fake Out on the setting turn"
+        }
+      ]
+    },
+    {
+      "name": "Landorus-Therian",
+      "dex": 645,
+      "base_speed": 91,
+      "role": ["Physical Attacker", "Intimidate"],
+      "usage_tier": "B",
+      "spreads": [
+        {
+          "id": "landorus-t-max-speed",
+          "label": "Max Speed Jolly",
+          "nature": "Jolly",
+          "evs": 252,
+          "ivs": 31,
+          "speed_stat": 157,
+          "item": "Life Orb / Choice Scarf",
+          "outspeeds": [
+            "Kyogre 252 EVs Timid (156)",
+            "Groudon 252 EVs Jolly (156)",
+            "Great Tusk 252 EVs Jolly (152)"
+          ],
+          "note": "1 point above the critical 156 tier — outspeeds Kyogre and Groudon without max investment on a Choice Scarf set; Intimidate provides team support on switch"
+        }
+      ]
+    },
+    {
+      "name": "Grimmsnarl",
+      "dex": 861,
+      "base_speed": 60,
+      "role": ["Prankster Support", "Screens"],
+      "usage_tier": "B",
+      "spreads": [
+        {
+          "id": "grimmsnarl-standard",
+          "label": "Standard Support",
+          "nature": "Impish",
+          "evs": 0,
+          "ivs": 31,
+          "speed_stat": 80,
+          "item": "Light Clay",
+          "outspeeds": [
+            "Porygon2 0 EVs (80 tie)",
+            "Iron Hands Brave 0 EVs (63)",
+            "Amoonguss 0 EVs (50)"
+          ],
+          "note": "Prankster gives Light Screen and Reflect +1 priority — sets up both screens on turn 1 before opponent can act. Spirit Break lowers SpAtk in doubles. 80 Speed irrelevant with Prankster screens."
         }
       ]
     },
